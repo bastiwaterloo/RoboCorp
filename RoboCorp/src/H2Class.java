@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 public class H2Class {
     public static void main(String[] a) throws Exception {
         var url = "jdbc:h2:mem:";
-
+        /*TEST*/
         try (var con = DriverManager.getConnection(url);
              var stm = con.createStatement();
              var rs = stm.executeQuery("SELECT 1+1")) {
